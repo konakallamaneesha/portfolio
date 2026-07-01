@@ -353,10 +353,45 @@ h3.my-profession
     margin-left: 4px;
     display:inline-block;
 }
+.about .about-content .personal-info .info-item p span a
+{
+    color: var(--text-black-700);
+    text-decoration: none;
+}
+.about .about-content .personal-info .info-item p span a.profile-link
+{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 10px;
+    border-radius:8px;
+    transition: all 0.15s ease;
+    color:var(--text-black-700);
+}
+.about .about-content .personal-info .info-item p span a.profile-link:hover
+{
+    color: #fff;
+    background: var(--skin-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.about .about-content .personal-info .info-item p span a .fab,
+.about .about-content .personal-info .info-item p span a .fas
+{
+    font-size:16px;
+}
+
+/* allow forcing an info-item to full width (stacked) */
+.about .about-content .personal-info .info-item.full-width
+{
+    flex:0 0 100%;
+    max-width:100%;
+}
 .about .about-content .personal-info .buttons .btn
 {
-margin-right: 15px;
-margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px; /* add space below the button so Certifications don't appear merged */
 }
 .about .about-content .skills
 {
